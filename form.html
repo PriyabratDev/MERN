@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            background-color: rgb(15, 23, 42);
+            margin: 250px 100px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 150px 80px;
+        }
+        select{
+            height: 40px;
+            width: 250px;
+            border: 2px solid rgb(62, 159, 145) ;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.137);
+            padding: 10px;
+            color: rgba(255, 255, 255, 0.664);
+        }
+        input,textarea{
+            border: 2px solid rgb(62, 159, 145) ;
+            border-radius: 10px;
+            height: 10px;
+            width: 225px;
+            background-color: rgba(255, 255, 255, 0.137);
+            padding: 10px;
+            color: rgba(255, 255, 255, 0.664);
+        }
+        input::placeholder,textarea::placeholder{
+            color: rgba(255, 255, 255, 0.664);
+        }
+        #submit{
+            width: 150PX;
+            height: 35px;
+            border-radius: 10px;
+            border: 2px solid rgb(62, 159, 145);
+            box-shadow: 0 0 25px rgba(231, 231, 231, 0.301);
+            background-color: rgb(62, 159, 145);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 650;
+            color: rgb(255, 255, 255)
+        }
+        .box{
+            border: 2px solid whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            width: 80%;
+            border-radius:50px;
+            background-color: rgba(51, 67, 97, 0.26);
+            padding: 5%;
+        }
+        label{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 100%;
+        }
+        h1{
+            color: rgb(62, 159, 145);
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 48px;
+            text-align: center;
+        }
+        p{
+            color: rgb(62, 159, 145);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Personal Details</h1>
+        <div>
+            <label for="Fname">First Name</label>
+            <br>
+            <br>
+            <input type="text" id="Fname" name="Fname" placeholder="John" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="Mname">Middle Name</label>
+            <br>
+            <br>
+            <input type="text" id="Mname" name="Mname" placeholder="Francis">
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="Lname">Last Name</label>
+            <br>
+            <br>
+            <input type="text" id="Lname" name="Lname" placeholder="Doe" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="Gender">Gender</label>
+            <br>
+            <br>
+            <select id="Gender" name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+                <option value="preferNotToSay">Prefer not to say</option>
+            </select>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="dob">DOB</label>
+            <br>
+            <br>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="Marital">Marital Status:</label>
+            <br>
+            <br>
+            <select id="Marital" name="Marital">
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="phno">Phone No.</label>
+            <br>
+            <br>
+            <input type="number" id="phno" name="phno" placeholder="9876543210" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <br>
+            <br>
+            <input type="email" id="Email" name="Email" placeholder="abc@xyz.com" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="Country">Country</label>
+            <br>
+            <br>
+            <input type="text" id="Country" name="Country" placeholder="India" required>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="Address">Address</label>
+            <br>
+            <br>
+            <textarea id="Address" name="Address" placeholder="Street,City,State,Country-123456" style="height: 45px;"></textarea>
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="PIN">Postal/Zip Code</label>
+            <br>
+            <br>
+            <input type="number" id="PIN" name="PIN" placeholder="123456" required>
+            <br>
+            <br>
+        </div>
+        <br>
+        <input type="submit" value="SUBMIT" id="submit">
+        <br>
+        <p style="font-size: 16px;">*Please Note: all fields except middle name are required</p>
+        
+    </div>
+</body>
+</html>
