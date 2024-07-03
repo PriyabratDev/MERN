@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
 </head>
-<body>
+<body style="background-color: rgb(31, 32, 32);">
     
 </body>
 </html>
@@ -13,4 +13,39 @@
     let x = 10
     console.log(x)
     console.log("1")
+    console.log(1) //color diff as "1"
+    console.log(typeof(x))  //-number
+    console.log(typeof("x"))    //-string
+    let y = "abcd"
+    console.log(y.length)
+    console.log(x.length)   //-undefined as type is number
+
+    x = [1,2,3,4,5,6];
+    console.log(x)
+    console.log(x.length)
+    console.log(typeof(x))
+
+    x.push(9)           //push and pop do work at the end
+    console.log(x)      //push can also push diff types of data
+    x.pop()
+    console.log(x)
+
+    x.unshift(9)           //unshift and shift do work at the beginning
+    console.log(x)
+    x.shift()
+    console.log(x)
+
+    /*OPERATORS
+    +  > Addition
+    -  > Substraction
+    *  > Multiplication
+    /  > Divison
+    ** > Power
+    %  > Modulo(Remainder)
+
+    */
+
+    //=   > Assignment
+    //==  > Data Comparison
+    //=== > Data and Type Comparison
 </script>
