@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Func</title>
+</head>
+<body style="background-color: #1a1a1a;">
+    <input type="number" id="n1" value="0">
+    <input type="number" id="n2" value="0">
+    <h1 id="h">heading</h1>
+    <button id="btn" onclick="chng()">Sum</button>
+</body>
+</html>
+<script>
+    function sum(a,b) {
+        console.log(a+b);
+    }
+    function chng() {
+        console.log("abcd");
+        let x = document.getElementById("h")
+        x.innerHTML="<u><b>abcd</b></u>"
+    }
+</script>

@@ -35,6 +35,26 @@
     x.shift()
     console.log(x)
 
+    let ar = x;                 //1,2,3,4,5,6
+    console.log("ar = "+ar);
+
+    //SLICE
+    let ar1 = x.slice(1,4);     //2,3,4    1-inclusive
+                                //         4-exclusive
+    console.log("ar1 = "+ar1);
+    console.log("ar = "+ar);      //i.e. doesn't change original array
+
+    //SPLICE
+    console.log("");
+    console.log("ar = "+ar);
+    let ar2= ar.splice(1,2,"n1","n2")
+    //(start,deleteCount,element1,element2,.....)
+    //elements are optional
+    //returns 2 elements from 1
+    //deletes 2 elements from 1 in original array and adds the values after delete count
+    console.log("updated ar = "+ar);    //1,n1,n2,4,5,6
+    console.log("ar2 = "+ar2);          //2,3
+
     /*OPERATORS
     +  > Addition
     -  > Substraction
@@ -48,4 +68,14 @@
     //=   > Assignment
     //==  > Data Comparison
     //=== > Data and Type Comparison
+
+    //2-D array
+    console.log('');
+    let ar2d = [[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20]]
+    let i = 0,j;
+    for(i;i<ar2d.length;i++){
+        for (j=0; j < ar2d[i].length; j++) {
+            console.log(""+i+j+" "+ar2d[i][j])
+        }
+    }
 </script>
