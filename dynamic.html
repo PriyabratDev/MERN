@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic JS</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let body = document.querySelector("body");
+    body.style.backgroundColor = style= "#1a1a1a"
+    // let x = document.createElement("h1");
+    // x.setAttribute("id","head1");
+    // x.setAttribute("class","head");
+    // x.style.color = "white";
+    // x.innerHTML = "hello";
+    
+
+
+    /*
+    1
+    12
+
+    */
+    let arr=[];
+    function push() {
+        arr.push(inp1.value);
+        console.log(arr);
+        disp()
+    }
+    function disp() {
+        let hd = document.createElement("h1")
+        hd.innerHTML = arr[arr.length-1];
+        hd.style.color ="white";
+        body.append(hd);
+    }
+    let inp1 = document.createElement("input");
+    let btn = document.createElement("button");
+    btn.addEventListener("click",push);
+    btn.innerHTML="Click";
+    body.append(inp1,btn);
+</script>

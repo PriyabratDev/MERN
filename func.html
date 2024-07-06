@@ -6,15 +6,21 @@
     <title>JS Func</title>
 </head>
 <body style="background-color: #1a1a1a;">
-    <input type="number" id="n1" value="0">
-    <input type="number" id="n2" value="0">
-    <h1 id="h">heading</h1>
-    <button id="btn" onclick="chng()">Sum</button>
+    <input type="number" id="n1" value=0>
+    <input type="number" id="n2" value=0>
+    <h1 id="h" style="color: whitesmoke;">Sum is 0.</h1>
+    <button id="btn" onclick="sum()">Sum</button>
 </body>
 </html>
 <script>
-    function sum(a,b) {
-        console.log(a+b);
+    function sum() {
+        let a = document.querySelector("#n1");
+        let b = document.querySelector("#n2");
+        let x;
+        x=Number(a.value)+Number(b.value);
+        console.log(x);
+        let sum = document.querySelector("#h");
+        sum.innerHTML="Sum is "+x+".";
     }
     function chng() {
         console.log("abcd");
